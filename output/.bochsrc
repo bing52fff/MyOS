@@ -1,0 +1,22 @@
+###########################################################
+# bochs configure file
+###########################################################
+
+#display_library: sdl
+
+megs:32
+
+romimage:file=/usr/local/share/bochs/BIOS-bochs-latest
+vgaromimage:file=/usr/local/share/bochs/VGABIOS-lgpl-latest
+
+floppya:1_44="a.img",status=inserted
+
+boot:a
+
+log:bochsout.txt
+
+mouse:enabled=0
+
+keyboard:keymap=/usr/local/share/bochs/keymaps/x11-pc-us.map
+#keyboard_mapping:enabled=1,map=/usr/share/bochs/keymaps/sdl-pc-us.map
+
